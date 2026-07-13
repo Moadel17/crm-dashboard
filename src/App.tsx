@@ -13,7 +13,7 @@ import routerProvider, {
 import { App as AntdApp } from "antd";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router";
 import { authProvider, dataProvider, liveProvider } from "./providers";
-import { Home, ForgotPassword, Login, Register } from "./pages";
+import { Home, ForgotPassword, Login, Register, CompaniesList } from "./pages";
 import LayOut from "./component/layout/layout";
 import { Resources } from "./resources/resource";
 
@@ -52,6 +52,7 @@ function App() {
                     </Authenticated>
                   }>
                   <Route index element={<Home />} />
+                  <Route path="/companies" element={<CompaniesList />} />
                 </Route>
               </Routes>
               <RefineKbar />
