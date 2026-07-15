@@ -2,4 +2,6 @@ export * from "./home/home";
 export * from "./Auth/register/register";
 export * from "./Auth/login/login";
 export * from "./Auth/forgotPassword/forgetPassword";
-export * from "./companies/companyList";
+export * from "./companies/list/companyList";
+export * from "./companies/create/create";
+export * from "./companies/edit/editCompany";
