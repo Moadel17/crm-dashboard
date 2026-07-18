@@ -25,6 +25,9 @@ import {
   CompaniesList,
   CreateCompany,
   EditCompany,
+  TasksList,
+  TasksEditPage,
+  TasksNewPage,
 } from "./pages";
 import LayOut from "./component/layout/layout";
 import { Resources } from "./resources/resource";
@@ -64,10 +67,22 @@ function App() {
                     </Authenticated>
                   }>
                   <Route index element={<Home />} />
+
                   <Route path="/companies">
                     <Route index element={<CompaniesList />} />
                     <Route path="new" element={<CreateCompany />} />
                     <Route path="edit/:id" element={<EditCompany />} />
+                  </Route>
+
+                  <Route
+                    path="/tasks"
+                    element={
+                      <TasksList>
+                        <Outlet />
+                      </TasksList>
+                    }>
+                    <Route path="new" element={<TasksNewPage />} />
+                    <Route path="edit/:id" element={<TasksEditPage />} />
                   </Route>
                 </Route>
               </Routes>

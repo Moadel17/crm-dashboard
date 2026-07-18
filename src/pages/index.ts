@@ -5,3 +5,6 @@ export * from "./Auth/forgotPassword/forgetPassword";
 export * from "./companies/list/companyList";
 export * from "./companies/create/create";
 export * from "./companies/edit/editCompany";
+export * from "./tasks/list/list";
+export * from "./tasks/edit/edit";
+export * from "./tasks/create/create";
