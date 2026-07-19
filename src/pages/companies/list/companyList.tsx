@@ -22,7 +22,7 @@ export const CompaniesList = ({ children }: PropsWithChildren) => {
   const { tableProps, filters } = useTable({
     resource: "companies",
     pagination: { pageSize: 12 },
-    onSearch: (values) => {
+    onSearch: (values: any) => {
       return [
         {
           field: "name",

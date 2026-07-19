@@ -142,7 +142,7 @@ export const CompanyContactsTable = () => {
         <Table.Column<Contact>
           dataIndex="id"
           width={112}
-          render={(value, record) => {
+          render={(_, record) => {
             return (
               <Space>
                 <Button
